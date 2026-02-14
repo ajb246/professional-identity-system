@@ -1,0 +1,18 @@
+{
+    "projects": [
+        {
+            "title": "Enterprise AI Agent",
+            "problem": "Manual data entry was costing the client 40 hours per week.",
+            "solution": "Developed a custom LLM-based agent to parse documents and populate databases automatically.",
+            "stack": [
+                "Python",
+                "LangChain",
+                "OpenAI",
+                "PostgreSQL"
+            ],
+            "outcome": "Reduced manual work by 95%.",
+            "metrics": "Saved $50k/year",
+            "timestamp": "2023-11-15"
+        }
+    ]
+}

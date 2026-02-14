@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Identity</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Loading State -->
+        <div id="loading-state"
+            style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #888;">
+            <h2>Loading Profile...</h2>
+            <p>Initializing secure connection...</p>
+        </div>
+
+        <!-- Public Content -->
+        <header id="hero" class="section"></header>
+        <section id="about" class="section"></section>
+        <section id="services" class="section"></section>
+        <section id="portfolio" class="section"></section>
+        <section id="contact" class="section"></section>
+
+        <!-- Admin Interface (Hidden by default) -->
+        <div id="admin-panel" class="hidden">
+            <div class="admin-header">
+                <h2>Admin Console</h2>
+                <button id="close-admin">Close</button>
+            </div>
+            <div class="admin-content">
+                <div class="chat-interface">
+                    <div id="chat-history"></div>
+                    <div class="chat-input-area">
+                        <textarea id="chat-input" placeholder="Describe updates..."></textarea>
+                        <button id="send-chat">Send</button>
+                    </div>
+                </div>
+                <div class="preview-interface">
+                    <div id="diff-viewer"></div>
+                    <div class="controls">
+                        <button id="commit-btn" disabled>Commit Changes</button>
+                    </div>
+                </div>
+            </div>
+            <div id="settings-modal" class="modal hidden">
+                <h3>Settings</h3>
+                <input type="password" id="github-token" placeholder="GitHub Token">
+                <input type="text" id="github-owner" placeholder="GitHub Username/Owner">
+                <input type="text" id="github-repo" placeholder="Repository Name">
+                <input type="password" id="openai-key" placeholder="OpenAI Key">
+                <button id="save-settings">Save</button>
+            </div>
+        </div>
+
+        <!-- Admin Trigger (Bottom Right) -->
+        <button id="admin-trigger"
+            style="position: fixed; bottom: 20px; right: 20px; opacity: 0; transition: opacity 0.3s;">Admin</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

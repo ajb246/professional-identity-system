@@ -1,0 +1,24 @@
+{
+    "services": [
+        {
+            "name": "AI Systems Architecture",
+            "description": "Designing robust, scalable AI-integrated systems for enterprise workflows.",
+            "deliverables": [
+                "System Design Document",
+                "Tech Stack Selection",
+                "Security Review"
+            ],
+            "pricing_model": "Project-based starting at $5k"
+        },
+        {
+            "name": "Full Stack MVP Development",
+            "description": "Rapid prototyping and development of Minimum Viable Products.",
+            "deliverables": [
+                "Functional Web App",
+                "Deployment pipeline",
+                "Source Code"
+            ],
+            "pricing_model": "Weekly retainer"
+        }
+    ]
+}

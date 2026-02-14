@@ -1,0 +1,16 @@
+{
+  "name": "Consultant Name",
+  "headline": "Expert Consultant & AI Architect",
+  "positioning": "Helping businesses leverage AI for scale.",
+  "bio": "I am a dedicated professional with over 10 years of experience in building scalable systems. My focus is on delivering high-impact solutions that drive business growth.",
+  "skills": [
+    "AI Strategy",
+    "System Architecture",
+    "Full Stack Development",
+    "Cloud Infrastructure"
+  ],
+  "contact": {
+    "email": "contact@example.com",
+    "calendar_link": "https://calendly.com"
+  }
+}
